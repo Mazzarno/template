@@ -1,0 +1,167 @@
+/* RESET CSS */
+
+a {
+    text-decoration: none;
+}
+
+
+/* FONT */
+
+@font-face {
+    font-family: 'Lato';
+    src: url('~assets/font/Lato/Lato-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    font-family: 'Lato';
+    font-weight: normal;
+}
+
+
+/* FONT RESIZE */
+
+
+/* LAYOUT */
+
+ ::-webkit-scrollbar {
+    width: 5px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: #ffff;
+    border-radius: 5px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #060f22;
+    border-radius: 10px;
+}
+
+#app {
+    text-align: center;
+    width: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    background-color: #ffff;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+}
+
+.logo_asus {
+    height: 16px;
+    width: 78px;
+    background-image: url('~assets/img/logo_asus_black.svg');
+}
+
+.logo_asus:hover {
+    height: 16px;
+    width: 78px;
+    background-image: url('~assets/img/logo_asus_blue.svg');
+}
+
+.home {
+    height: 100vh;
+}
+
+body,
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+}
+
+.banniere1 {
+    width: 100vw;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* MARGIN */
+
+.mx {
+    margin: 0 2em 0 2em;
+}
+
+.my {
+    margin: 2em 0 2em 0;
+}
+
+.mt {
+    margin: 2em 0 0 0;
+}
+
+.mb {
+    margin: 0 0 2em 0;
+}
+
+.ma {
+    margin: 2em;
+}
+
+.m_podium {
+    margin: 8em 0 0 0;
+}
+
+
+/* animations */
+
+.zoom {
+    transition: transform 0.3s !important;
+}
+
+.zoom:hover {
+    transform: scale(1.1) !important;
+}
+
+.up {
+    transition: transform 0.2s !important;
+}
+
+.up:hover {
+    transform: translateY(-5px) !important;
+}
+
+.fly {
+    -webkit-animation: fly 3s ease-in-out infinite alternate both;
+    animation: fly 3s ease-in-out infinite alternate both;
+}
+
+@-webkit-keyframes fly {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-25px);
+    }
+}
+
+@keyframes fly {
+    0% {
+        transform: translateY(0px);
+    }
+    100% {
+        transform: translateY(-25px);
+    }
+}
