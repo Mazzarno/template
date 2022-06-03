@@ -8,16 +8,30 @@ a {
 /* FONT */
 
 @font-face {
-    font-family: 'Lato';
-    src: url('~assets/font/Lato/Lato-Regular.ttf');
+    font-family: 'Segoe UI';
+    src: url('~assets/font/Segoe UI.ttf');
     font-weight: normal;
     font-display: swap;
 }
 
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
 html,
-body {
-    font-family: 'Lato';
+body,
+#app {
+    font-family: 'Segoe UI';
     font-weight: normal;
+    color: #fff;
+    background-color: #030305;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    text-align: center;
+    width: 100% !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
 }
 
 
@@ -26,28 +40,52 @@ body {
 
 /* LAYOUT */
 
+.vs-button--size-xl .vs-button__content {
+    padding: 30px 25px;
+}
+
+.OLED_header {
+    width: 100%;
+}
+
+#header img {
+    width: 100%;
+    height: 100vh;
+}
+
+#OfficialHeaderWrapper {
+    display: none;
+    height: 0px;
+}
+
+.OLED_card {
+    margin: 35px 30px 0;
+    max-width: 280px;
+}
+
+.img_OLED_PC {
+    margin: 0 auto;
+    max-width: 100%;
+    background-size: contain;
+}
+
+.v-application p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
  ::-webkit-scrollbar {
     width: 5px;
 }
 
  ::-webkit-scrollbar-track {
-    background: #ffff;
-    border-radius: 5px;
+    background: #030305;
+    border-radius: 5px
 }
 
  ::-webkit-scrollbar-thumb {
-    background: #060f22;
+    background: #262626;
     border-radius: 10px;
-}
-
-#app {
-    text-align: center;
-    width: 100% !important;
-    min-width: 100% !important;
-    min-height: 100% !important;
-    background-color: #ffff;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
 }
 
 .logo_asus {
@@ -71,6 +109,10 @@ html {
     margin: 0 !important;
     padding: 0 !important;
     overflow-x: hidden !important;
+}
+
+.footer_haut {
+    background-color: #262626;
 }
 
 .banniere1 {
@@ -108,8 +150,12 @@ html {
     margin: 2em 0 2em 0;
 }
 
-.mt {
+.mt1 {
     margin: 2em 0 0 0;
+}
+
+.mt2 {
+    margin: 4em 0 0 0;
 }
 
 .mb {

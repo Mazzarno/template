@@ -33,14 +33,17 @@ export default {
     //loading: '~/components/loading.vue',
 
     // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ['~/plugins/vuesax'],
+    plugins: ['~/plugins/vuesax', { src: '~/plugins/asus.js', mode: 'client' }],
 
     // Auto import components: https://go.nuxtjs.dev/config-components
     components: true,
 
     // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-    buildModules: ['nuxt-compress'],
-
+    buildModules: ['nuxt-compress', '@nuxtjs/vuetify'],
+    vuetify: {
+        optionsPath: './vuetify.js',
+        theme: { dark: true },
+    },
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: [
         '@nuxtjs/robots',
@@ -56,7 +59,6 @@ export default {
             },
         ]
     ],
-
     generate: {
         dir: 'htdocs',
         fallback: '404.html',
@@ -64,8 +66,6 @@ export default {
         subFolders: false,
         crawler: false,
     },
-
-
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {},
     robots: {
@@ -83,7 +83,7 @@ export default {
             lastmod: new Date()
         },
         routes: [{
-            url: 'https://asus.mazzar.fr/exo1',
+            url: 'https://asus.mazzar.fr/',
             changefreq: 'daily',
             priority: 1,
             lastmod: new Date()

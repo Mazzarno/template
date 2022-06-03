@@ -1,25 +1,9 @@
 <template>
-  <div id="app">
-    <!-- NAV DRAWER -->
-    <!-- NAV BAR -->
-    <vs-navbar>
-      <template #left>
-        <nuxt-link to="/">
-          <div
-            data-aos="flip-up"
-            data-aos-duration="1000"
-            class="logo_asus"
-          ></div>
-        </nuxt-link>
-      </template>
-      <vs-navbar-item> </vs-navbar-item>
-    </vs-navbar>
-    <!-- MAIN -->
+  <v-app>
     <transition name="page" mode="out-in">
       <Nuxt />
     </transition>
-    <!-- FOOTER -->
-  </div>
+  </v-app>
 </template>
 
 <script>
