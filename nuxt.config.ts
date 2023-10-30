@@ -1,12 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ["~/assets/css/styles.css",/*"~/assets/css/pico.min.css", */"@mdi/font/css/materialdesignicons.min.css"],
+  css: [
+    "~/assets/css/styles.css",
+    "~/assets/css/pico.min.css",
+    "@mdi/font/css/materialdesignicons.min.css",
+  ],
   //nitro: { preset: "netlify" },
   modules: ["@nuxtjs/tailwindcss"],
 
   app: {
-     pageTransition: { name: 'page', mode: 'out-in' },
+    pageTransition: { name: "page", mode: "out-in" },
     head: {
       titleTemplate: " - %s",
       htmlAttrs: {
@@ -76,4 +80,4 @@ export default defineNuxtConfig({
     },
   },
   plugins: [],
-})
+});

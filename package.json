@@ -11,12 +11,14 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "nuxt": "^3.8.0",
+    "nuxt": "^3.5.2",
     "vue": "^3.3.7",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
     "@mdi/font": "^7.3.67",
-    "@nuxtjs/tailwindcss": "^6.8.1"
+    "@nuxtjs/tailwindcss": "^6.8.1",
+    "vue-server-renderer": "^2.7.14",
+    "vue-template-compiler": "^2.7.14"
   }
 }
