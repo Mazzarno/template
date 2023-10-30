@@ -1,14 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: false },
+  devtools: { enabled: true },
   css: [
     "~/assets/css/styles.css",
     "~/assets/css/pico.min.css",
     "@mdi/font/css/materialdesignicons.min.css",
   ],
   //nitro: { preset: "netlify" },
-  modules: ["@nuxtjs/tailwindcss"],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-simple-robots", "nuxt-simple-sitemap", 'nuxt-schema-org', 'nuxt-og-image'],
 
+  site: {
+    url: 'https://template-mazzar.netlify.app/',
+    name: 'My Template',
+  },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
     head: {

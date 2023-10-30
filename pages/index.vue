@@ -4,4 +4,5 @@
     <NuxtLink to="/about"> <p>About page</p></NuxtLink>
   </div>
 </template>
-<script lang="ts"></script>
+<script lang="ts">
+</script>
