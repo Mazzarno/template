@@ -6,12 +6,17 @@ export default defineNuxtConfig({
     "~/assets/css/pico.min.css",
     "@mdi/font/css/materialdesignicons.min.css",
   ],
-  //nitro: { preset: "netlify" },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-simple-robots", "nuxt-simple-sitemap", 'nuxt-schema-org'],
+  nitro: { preset: "netlify-edge" },
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "nuxt-simple-robots",
+    "nuxt-simple-sitemap",
+    "nuxt-schema-org",
+  ],
 
   site: {
-    url: 'https://template-mazzar.netlify.app/',
-    name: 'My Template',
+    url: "https://template-mazzar.netlify.app/",
+    name: "My Template",
   },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
