@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     "@mdi/font/css/materialdesignicons.min.css",
   ],
   //nitro: { preset: "netlify" },
-  modules: ["@nuxtjs/tailwindcss", "nuxt-simple-robots", "nuxt-simple-sitemap", 'nuxt-schema-org', 'nuxt-og-image'],
+  modules: ["@nuxtjs/tailwindcss", "nuxt-simple-robots", "nuxt-simple-sitemap", 'nuxt-schema-org'],
 
   site: {
     url: 'https://template-mazzar.netlify.app/',
