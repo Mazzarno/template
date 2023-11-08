@@ -3,12 +3,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   css: [
     "~/assets/css/styles.css",
-    "~/assets/css/pico.min.css",
     "@mdi/font/css/materialdesignicons.min.css",
   ],
   nitro: { preset: "netlify-edge" },
   modules: [
     "@nuxtjs/tailwindcss",
+    "@pinia/nuxt",
+    "@nuxt/image",
     "nuxt-simple-robots",
     "nuxt-simple-sitemap",
     "nuxt-schema-org",
